@@ -74,6 +74,18 @@ def main():
         missing_values = check_missing_values(df)
         st.write(missing_values)
 
+        st.write("### Valores Duplicados ###")
+        duplicates = check_duplicates(df)
+        st.write(f"Total de valores duplicados: {duplicates}")
+
+        st.write("### Tipos de Dados ###")
+        data_types = check_data_types(df)
+        st.write(data_types)
+
+        st.write("### Outliers ###")
+        outliers = detect_outliers(df)
+        st.write(outliers)
+
 
 if __name__ == "__main__":
     main()
