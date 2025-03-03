@@ -57,6 +57,12 @@ def main():
 
     option = st.radio("Escolha uma opção:", ("Upload CSV", "Gerar Dataset Fake"))
 
+    if option == "Gerar Dataset Fake":
+        rows = st.sidebar.slider("Número de linhas:", 10, 1000, 100)
+        df = generate_fake_data(rows)
+        st.write("### Dataset Fake gerado ###")
+        st.dataframe(df.head())
+
 
 if __name__ == "__main__":
     main()
