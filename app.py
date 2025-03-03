@@ -26,14 +26,18 @@ def load_data(uploaded_file):
     else:
         return None
 
+
 def check_missing_values(df):
     return df.isnull().sum()
+
 
 def check_duplicates(df):
     return df.duplicated().sum()
 
+
 def check_data_types(df):
     return df.dtypes
+
 
 def detect_outliers(df):
     outliers = {}
@@ -46,8 +50,13 @@ def detect_outliers(df):
         outliers[column] = df[(df[column] < lower_bound) | (df[column] > upper_bound)].index.tolist()
     return outliers
 
+
 def main():
     st.title(":bar_chart: Data Quality")
     st.write("Faça upload de um arquivo CSV ou gere um dataset fake para analisar a qualidade dos dados.")
 
     option = st.radio("Escolha uma opção:", ("Upload CSV", "Gerar Dataset Fake"))
+
+
+if __name__ == "__main__":
+    main()
