@@ -62,6 +62,17 @@ def main():
         df = generate_fake_data(rows)
         st.write("### Dataset Fake gerado ###")
         st.dataframe(df.head())
+    else:
+        uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
+        if uploaded_file is not None:
+            df = load_data(uploaded_file)
+            st.write("### Dataset carregado ###")
+            st.dataframe(df.head())
+
+    if 'df' in locals():
+        st.write("### Valores Ausentes ###")
+        missing_values = check_missing_values(df)
+        st.write(missing_values)
 
 
 if __name__ == "__main__":
