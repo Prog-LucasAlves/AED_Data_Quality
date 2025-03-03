@@ -12,6 +12,7 @@ pandas = "^2.2.3"
 numpy = "^2.2.3"
 seaborn = "^0.13.2"
 matplotlib = "^3.10.1"
+faker = "^36.1.1"
 
 
 [tool.poetry.group.dev.dependencies]
