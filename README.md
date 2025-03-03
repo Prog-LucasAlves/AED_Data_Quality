@@ -10,12 +10,12 @@ Este projeto é uma aplicação em **Streamlit** para análise da qualidade de d
 
 ## 🚀 Tecnologias Utilizadas
 
-- ![Python](https://www.python.org/)
-- ![Streamlit](https://streamlit.io/)
-- ![Pandas](https://pandas.pydata.org/)
-- ![Numpy](https://numpy.org/)
-- ![Seaborn](https://seaborn.pydata.org/) e [Matplotlib](https://matplotlib.org/)
-- ![Faker](https://faker.readthedocs.io/en/master/)
+- [Python](https://www.python.org/)
+- [Streamlit](https://streamlit.io/) (Interface gráfica)
+- [Pandas](https://pandas.pydata.org/) (Manipulação de dados)
+- [Numpy](https://numpy.org/)(Cálculos estatísticos)
+- [Seaborn](https://seaborn.pydata.org/) e [Matplotlib](https://matplotlib.org/) (Visualização de dados)
+- [Faker](https://faker.readthedocs.io/en/master/)(Geração de dados falsos)
 
 ## 📌 Como Instalar e Executar
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-🔹 **Como Usar a Aplicação**
+## 🔹 Como Usar a Aplicação
 
 1️⃣ **Escolha a opção de análise:**
 
