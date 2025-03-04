@@ -73,7 +73,7 @@ def main():
     if 'df' in locals():
         st.write("### Valores Ausentes ###")
         missing_values = check_missing_values(df)
-        st.write(missing_values)
+        st.write(missing_values, missing_values.index.tolist())
 
         st.write("### Valores Duplicados ###")
         duplicates = check_duplicates(df)
