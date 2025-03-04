@@ -13,6 +13,7 @@ def generate_fake_data(rows=100):
         "ID": [fake.uuid4() for _ in range(rows)],
         "Nome": [fake.name() for _ in range(rows)],
         "Idade": [random.randint(18, 80) for _ in range(rows)],
+        "Trabalho": [fake.job() for _ in range(rows)],
         "Salário": [round(random.uniform(2000, 15000), 2) for _ in range(rows)],
         "Email": [fake.email() for _ in range(rows)],
         "Data_Registro": [fake.date_time_this_decade() for _ in range(rows)]
@@ -58,7 +59,7 @@ def main():
     option = st.radio("Escolha uma opção:", ("Upload CSV", "Gerar Dataset Fake"))
 
     if option == "Gerar Dataset Fake":
-        rows = st.slider("Número de linhas:", 100, 1000, 100)
+        rows = st.slider("Número de linhas:", 100, 10000, 100)
         df = generate_fake_data(rows)
         st.write("### Dataset Fake Gerado ###")
         st.dataframe(df.head())
