@@ -45,7 +45,7 @@ streamlit run app.py
 
 ## 🔧 Personalização
 
-Quer modificar os dados gerados? Edite a função generate_fake_data() no código para alterar os campos gerados.
+Quer modificar os dados gerados? Edite a função **generate_fake_data()** no código para alterar os campos gerados.
 
 ## 📜 Licença
 
@@ -55,10 +55,12 @@ Este projeto está licenciado sob a MIT [License](https://github.com/Prog-LucasA
 
 - Quer contribuir? Siga os passos:
 
-1️⃣ Faça um fork do projeto
-2️⃣ Crie uma branch com sua feature (git checkout -b minha-feature)
-3️⃣ Commit suas mudanças (git commit -m 'Minha nova feature')
-4️⃣ Faça um push para a branch (git push origin minha-feature)
-5️⃣ Abra um Pull Request
+- 1️⃣ Faça um fork do projeto
+- 2️⃣ Crie uma branch com sua feature (git checkout -b minha-feature)
+- 3️⃣ Commit suas mudanças (git commit -m 'Minha nova feature')
+- 4️⃣ Faça um push para a branch (git push origin minha-feature)
+- 5️⃣ Abra um Pull Request
 
-☁️ Extra Deploy: https://aed-data-quality.onrender.com/
+## ☁️ Deploy(Extra)
+
+- [link](https://aed-data-quality.onrender.com/)
