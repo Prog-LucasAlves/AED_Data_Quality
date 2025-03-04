@@ -53,7 +53,7 @@ Este projeto está licenciado sob a MIT [License](https://github.com/Prog-LucasA
 
 ## 🤝 Contribuição
 
-- Quer contribuir? Siga os passos:
+Quer contribuir? Siga os passos:
 
 - 1️⃣ Faça um fork do projeto
 - 2️⃣ Crie uma branch com sua feature (git checkout -b minha-feature)
