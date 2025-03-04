@@ -13,7 +13,6 @@ def generate_fake_data(rows=100):
         "ID": [fake.uuid4() for _ in range(rows)],
         "Nome": [fake.name() for _ in range(rows)],
         "Idade": [random.randint(18, 80) for _ in range(rows)],
-        "Trabalho": [fake.job() for _ in range(rows)],
         "Salário": [round(random.uniform(2000, 15000), 2) for _ in range(rows)],
         "Email": [fake.email() for _ in range(rows)],
         "Data_Registro": [fake.date_time_this_decade() for _ in range(rows)]
@@ -73,7 +72,7 @@ def main():
     if 'df' in locals():
         st.write("### Valores Ausentes ###")
         missing_values = check_missing_values(df)
-        st.write(missing_values, missing_values.index.tolist())
+        st.write(missing_values)
 
         st.write("### Valores Duplicados ###")
         duplicates = check_duplicates(df)
