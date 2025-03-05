@@ -26,12 +26,19 @@ git clone https://github.com/Prog-LucasAlves/AED_Data_Quality.git
 cd data_quality
 ```
 
-2️⃣ **Instale as Dependências**
+2️⃣ **Criar um ambiente virtual e ativá-lo:**
+```bash
+python -m venv venv  # Criar ambiente virtual
+source venv/bin/activate  # Para Linux/macOS
+venv\Scripts\activate  # Para Windows
+```
+
+3️⃣ **Instale as Dependências**
 ```bash
 pip install -r requirements.txt
 ```
 
-3️⃣ **Execute a aplicação**
+4️⃣ **Execute a aplicação**
 ```bash
 streamlit run app.py
 ```
